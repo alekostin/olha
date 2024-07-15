@@ -34,7 +34,7 @@
       rgba(255, 255, 255, 1)
     ),
     linear-gradient(to top, rgba(255, 255, 255, 0.55), rgb(21, 39, 83) 100%); */
-
+  box-shadow: 5px 5px 5px #ccc;
   @apply bg-white;
 }
 

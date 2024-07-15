@@ -11,16 +11,16 @@ export default function Hero() {
     <section className="hero">
       <div className="container flex flex-col justify-end items-center md:flex-row md:justify-center md:items-end h-full">
         {/* Text */}
-        <div className="flex flex-col justify-center items-center mb-[25px] px-[15px] md:h-full md:items-end md:mb-0 md:pt-16">
+        <div className="flex flex-col justify-center items-center mb-[5px] px-[15px] md:h-full md:items-end md:mb-0 md:pt-16">
           <AnimatedText>
-            <p className="text-center md:text-right">Spécialisée en</p>
-            <h1 className="max-w-[260px] md:max-w-[220px] xl:max-w-[350px] mb-4 mx-auto md:mr-0 text-3xl xl:text-5xl text-center md:text-right">
-              Maquillage permanent <br className="hidden md:block" /> à Orléans
+            <p className="text-center md:text-right text-sm">Spécialisée en</p>
+            <h1 className="max-w-[260px] md:max-w-[220px] xl:max-w-[350px] mx-auto md:mr-0 text-2xl xl:text-5xl text-center md:text-right">
+              Maquillage permanent <br className="" /> à Orléans
             </h1>
           </AnimatedText>
 
           <AnimatedText>
-            <h2 className="max-w-[350px] lg:max-w-[300px] mb-2 md:ml-auto text-center md:text-right md:text-xl">
+            <h2 className="max-w-[350px] lg:max-w-[300px] mb-2 md:ml-auto text-center md:text-right text-sm md:text-xl">
               Un look spectaculaire avec un accent sur les yeux en seulement 1,5
               heure dans notre studio !
             </h2>

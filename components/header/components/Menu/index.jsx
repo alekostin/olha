@@ -14,12 +14,8 @@ const Links = [
     path: "prix",
   },
   {
-    name: "Éducation",
-    path: "/education",
-  },
-  {
     name: "Contacts",
-    path: "/contacts",
+    path: "contacts",
   },
 ];
 
