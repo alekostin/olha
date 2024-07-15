@@ -5,7 +5,7 @@ import Logo from "@/public/logo_full_transparent.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white py-8">
+    <footer className="footer py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Логотип */}
         <div className="mb-4 md:mb-0">

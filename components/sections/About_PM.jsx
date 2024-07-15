@@ -19,17 +19,6 @@ export default function About_PM() {
             </div>
           </AnimatedImage>
 
-          <AnimatedImage>
-            <div className="about__image ">
-              <Image
-                className="h-full w-auto object-cover"
-                src={link}
-                alt="Tatouage des yeux et des flèches à Orléans"
-                priority={true}
-              />
-            </div>
-          </AnimatedImage>
-
           <div>
             <h2 className="title lg:max-w-[570px] lg:ml-auto">
               Sublimez Votre Beauté avec le Maquillage Permanent par Olga
@@ -45,6 +34,17 @@ export default function About_PM() {
               vous utilisiez auparavant pendant plusieurs années. Le maquillage
               permanent est une puissante alternative à tout type de maquillage.
             </p>
+
+            <AnimatedImage>
+              <div className="about__image ">
+                <Image
+                  className="h-full w-auto object-cover"
+                  src={link}
+                  alt="Tatouage des yeux et des flèches à Orléans"
+                  priority={true}
+                />
+              </div>
+            </AnimatedImage>
 
             <p>
               Durable, beau, net – avec lui, vous ressentirez une transformation

@@ -3,10 +3,17 @@ import olgaImage from "@/public/about_Olha.jpg"; // Замените на пут
 
 export default function About() {
   return (
-    <section id="apropos" className="about bg-primary text-white py-10 px-5">
+    <section id="apropos" className="about py-10 px-5">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
+        <div className="md:w-1/3">
+          <Image
+            src={olgaImage}
+            alt="Ольга Денюль"
+            className="rounded-full w-full h-auto"
+          />
+        </div>
         <div className="md:w-2/3 md:pl-10 mt-6 md:mt-0">
-          <h2 className="text-3xl font-bold mb-4">Ольга Денюль</h2>
+          <h2 className="text-3xl font-bold mb-4">À propos</h2>
           <p>
             Olga Denyul est une maîtresse talentueuse et propriétaire du studio
             &quot;L&apos;art de la beauté&quot; à Orléans. Olga est connue pour
@@ -31,14 +38,6 @@ export default function About() {
             les plus modernes et les plus sûres. Son objectif est de faire en
             sorte que chaque femme se sente belle et confiante.
           </p>
-        </div>
-
-        <div className="md:w-1/3">
-          <Image
-            src={olgaImage}
-            alt="Ольга Денюль"
-            className="rounded-full w-full h-auto"
-          />
         </div>
       </div>
     </section>
