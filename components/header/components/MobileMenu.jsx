@@ -96,7 +96,7 @@ export default function MobileMenu({ links }) {
 
           {/* Button */}
           <motion.li className="mt-4" variants={linkVariants}>
-            <Button onClick={toggleMenu}>S'inscrire</Button>
+            <Button onClick={toggleMenu}>S&apos;inscrire</Button>
           </motion.li>
         </motion.ul>
       </motion.nav>

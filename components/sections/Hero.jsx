@@ -27,7 +27,7 @@ export default function Hero() {
           </AnimatedText>
 
           <AnimatedText>
-            <Button className="md:ml-auto bg-primary">S'inscrire</Button>
+            <Button className="md:ml-auto bg-primary">S&apos;inscrire</Button>
           </AnimatedText>
         </div>
 

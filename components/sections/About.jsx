@@ -9,20 +9,21 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-4">Ольга Денюль</h2>
           <p>
             Olga Denyul est une maîtresse talentueuse et propriétaire du studio
-            "L'art de la beauté" à Orléans. Olga est connue pour ses compétences
-            professionnelles et son approche créative du maquillage et du
-            tatouage. Son travail ne met pas seulement en valeur la beauté
-            naturelle de ses clients, mais cache également les défauts, tels que
-            les cicatrices et les traces d'acné.
+            &quot;L&apos;art de la beauté&quot; à Orléans. Olga est connue pour
+            ses compétences professionnelles et son approche créative du
+            maquillage et du tatouage. Son travail ne met pas seulement en
+            valeur la beauté naturelle de ses clients, mais cache également les
+            défauts, tels que les cicatrices et les traces d&apos;acné.
           </p>
           <p>
-            Avec des années d'expérience et une passion pour son métier, Olga
-            crée des looks uniques qui aident les clients à se sentir confiants
-            et attrayants. Son studio propose une large gamme de services, y
-            compris le maquillage permanent, le tatouage des sourcils et des
-            lèvres, ainsi que les soins de la peau. L'attention aux détails et
-            l'approche individuelle de chaque client font d'Olga l'un des
-            spécialistes les plus recherchés dans son domaine.
+            Avec des années d&apos;expérience et une passion pour son métier,
+            Olga crée des looks uniques qui aident les clients à se sentir
+            confiants et attrayants. Son studio propose une large gamme de
+            services, y compris le maquillage permanent, le tatouage des
+            sourcils et des lèvres, ainsi que les soins de la peau.
+            L&apos;attention aux détails et l&apos;approche individuelle de
+            chaque client font d&apos;Olga l&apos;un des spécialistes les plus
+            recherchés dans son domaine.
           </p>
           <p>
             Olga améliore constamment ses compétences en participant à divers
