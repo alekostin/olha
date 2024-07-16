@@ -1,5 +1,6 @@
 import Image from "next/image";
 import link from "@/public/pinterest1.jpeg";
+import link2 from "@/public/pinterest7.jpeg";
 
 import AnimatedImage from "../AnimatedImage";
 
@@ -12,7 +13,7 @@ export default function About_PM() {
             <div className="about__image ">
               <Image
                 className="h-full w-auto object-cover"
-                src={link}
+                src={link2}
                 alt="Tatouage des yeux et des flèches à Orléans"
                 priority={true}
               />

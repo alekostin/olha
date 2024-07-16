@@ -1,10 +1,7 @@
 import Image from "next/image";
 import AnimatedText from "../AnimatedText";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import hero from "@/public/hero.png";
-
-import { FaArrowCircleDown } from "react-icons/fa";
-import AnimatedImage from "../AnimatedImage";
 
 export default function Hero() {
   return (
@@ -27,7 +24,12 @@ export default function Hero() {
           </AnimatedText>
 
           <AnimatedText>
-            <Button className="md:ml-auto bg-primary">S&apos;inscrire</Button>
+            <Link
+              href="#signin"
+              className="md:ml-auto bg-primary rounded-3xl text-white px-5 py-2"
+            >
+              S&apos;inscrire
+            </Link>
           </AnimatedText>
         </div>
 
