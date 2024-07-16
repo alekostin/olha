@@ -1,55 +1,113 @@
-// components/PricingTable.js
-const pricingPlans = [
-  {
-    title: "Basic",
-    price: "$10",
-    features: ["Feature 1", "Feature 2", "Feature 3"],
-  },
-  {
-    title: "Standard",
-    price: "$20",
-    features: ["Feature 1", "Feature 2", "Feature 3", "Feature 4"],
-  },
-  {
-    title: "Premium",
-    price: "$30",
-    features: ["Feature 1", "Feature 2", "Feature 3", "Feature 4", "Feature 5"],
-  },
-];
+"use client";
 
 export default function PricingTable() {
+  const services = [
+    {
+      name: "Maquillage permanent",
+      price: "de 100€ à 150€",
+      duration: "selon la zone",
+      description: [
+        "Sourcils, lèvres et eye-liners parfaits.",
+        "Apparence soignée sans maquillage quotidien.",
+        "Utilisation de matériaux sûrs et de haute qualité.",
+        "Résultat naturel et harmonieux.",
+      ],
+    },
+    {
+      name: "Massage facial sous vide",
+      price: "30€",
+      duration: "par séance",
+      description: [
+        "Amélioration du tonus de la peau.",
+        "Réduction des gonflements et des rides.",
+        "Peau fraîche et éclatante après la première séance.",
+      ],
+    },
+    {
+      name: "Lamination des cils",
+      price: "30€",
+      duration: "par séance",
+      description: [
+        "Cils épais, longs et soignés.",
+        "Regard expressif et attrayant sans efforts supplémentaires.",
+      ],
+    },
+    {
+      name: "Nettoyage du visage",
+      price: "40€",
+      duration: "par séance",
+      description: [
+        "Nettoyage en profondeur des pores.",
+        "Nettoyage matériel et manuel.",
+        "Teint sain.",
+        "Restauration de la fraîcheur naturelle de la peau.",
+      ],
+    },
+    {
+      name: "Coloration et épilation des sourcils",
+      price: "30€",
+      duration: "par séance",
+      description: [
+        "Forme et couleur parfaites des sourcils.",
+        "Apparence harmonieuse et stylée.",
+        "Approche individuelle pour chaque client.",
+      ],
+    },
+  ];
+
   return (
     <section id="prix">
       <div className="container">
-        <div className="py-12 bg-gray-100">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold">Prix</h2>
+        <h2 className="title lg:max-w-[570px] lg:ml-auto">Prix</h2>
+        <div className="price-list">
+          {services.map((service, index) => (
+            <div key={index} className="service-item">
+              <h3 className="service-name">{service.name}</h3>
+              <p className="service-price">
+                <strong>Prix:</strong> {service.price}
+              </p>
+              <p className="service-duration">
+                <strong>Durée:</strong> {service.duration}
+              </p>
+              <ul className="service-description">
+                {service.description.map((desc, i) => (
+                  <li key={i}>{desc}</li>
+                ))}
+              </ul>
             </div>
-            <div className="flex flex-wrap justify-center">
-              {pricingPlans.map((plan, index) => (
-                <div
-                  key={index}
-                  className="w-full max-w-sm mx-4 my-4 bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl"
-                >
-                  <div className="p-6 text-center">
-                    <h3 className="text-2xl font-bold mb-4">{plan.title}</h3>
-                    <p className="mt-4 text-3xl font-bold mb-6">{plan.price}</p>
-                    <ul className="mb-6">
-                      {plan.features.map((feature, i) => (
-                        <li key={i} className="text-gray-600 py-1">
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <button className="bg-primary text-white py-2 px-4 rounded-full">
-                      Choose Plan
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
+          <style jsx>{`
+            .price-list {
+              padding: 20px;
+              background-color: #f9f9f9;
+              border-radius: 8px;
+            }
+            .service-item {
+              margin-bottom: 20px;
+              padding: 15px;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              background-color: #fff;
+            }
+            .service-name {
+              font-size: 1.5em;
+              margin-bottom: 10px;
+              color: #333;
+            }
+            .service-price,
+            .service-duration {
+              font-size: 1.2em;
+              margin-bottom: 10px;
+              color: #555;
+            }
+            .service-description {
+              list-style: disc inside;
+              color: #666;
+            }
+            .service-description li {
+              margin-bottom: 5px;
+            }
+          `}</style>
         </div>
       </div>
     </section>

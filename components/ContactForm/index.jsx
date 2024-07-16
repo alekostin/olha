@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { initEmailJS } from "@/utils/emailjs";
-import DateTimePicker from "@/components/Datepicker";
+/* import DateTimePicker from "@/components/Datepicker"; */
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -74,64 +74,68 @@ export default function ContactForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="bg-primary p-8 rounded-lg shadow-lg max-w-lg mx-auto"
-    >
-      <h2 className="text-2xl font-bold mb-6 text-white">Свяжитесь с нами</h2>
-      <div className="mb-4">
-        <label className="block text-white mb-2" htmlFor="name">
-          Имя
-        </label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          value={formData.name}
-          onChange={handleChange}
-          className="w-full p-2 rounded"
-          required
-        />
+    <section id="signin">
+      <div className="container">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-primary p-8 rounded-lg shadow-lg max-w-lg mx-auto"
+        >
+          <h2 className="text-2xl font-bold mb-6 text-white">Contactez-nous</h2>
+          <div className="mb-4">
+            <label className="block text-white mb-2" htmlFor="name">
+              Nom
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full p-2 rounded"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-white mb-2" htmlFor="email">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full p-2 rounded"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-white mb-2" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full p-2 rounded"
+              required
+            ></textarea>
+          </div>
+          {/*  <DateTimePicker
+    selectedDate={selectedDate}
+    setSelectedDate={setSelectedDate}
+    selectedTime={selectedTime}
+    setSelectedTime={setSelectedTime}
+  /> */}
+          <button
+            type="submit"
+            className="bg-white text-primary font-bold py-2 px-4 rounded"
+          >
+            Envoyer
+          </button>
+        </form>
       </div>
-      <div className="mb-4">
-        <label className="block text-white mb-2" htmlFor="email">
-          Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full p-2 rounded"
-          required
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block text-white mb-2" htmlFor="message">
-          Сообщение
-        </label>
-        <textarea
-          name="message"
-          id="message"
-          value={formData.message}
-          onChange={handleChange}
-          className="w-full p-2 rounded"
-          required
-        ></textarea>
-      </div>
-      <DateTimePicker
-        selectedDate={selectedDate}
-        setSelectedDate={setSelectedDate}
-        selectedTime={selectedTime}
-        setSelectedTime={setSelectedTime}
-      />
-      <button
-        type="submit"
-        className="bg-white text-primary font-bold py-2 px-4 rounded"
-      >
-        Отправить
-      </button>
-    </form>
+    </section>
   );
 }

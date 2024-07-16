@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -96,7 +96,9 @@ export default function MobileMenu({ links }) {
 
           {/* Button */}
           <motion.li className="mt-4" variants={linkVariants}>
-            <Button onClick={toggleMenu}>S&apos;inscrire</Button>
+            <Link href="#signin" onClick={toggleMenu}>
+              S&apos;inscrire
+            </Link>
           </motion.li>
         </motion.ul>
       </motion.nav>
